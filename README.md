@@ -23,10 +23,10 @@ A toast notification library for SwiftUI.
 Add the package in Xcode with this repository URL:
 
 ```text
-https://github.com/Rabithua/swiftui-toasts.git
+https://github.com/seansfkelley/swiftui-toasts.git
 ```
 
-Select the `Toasts` product and use version `1.2.0` or newer.
+Select the `Toasts` product and the `main` branch.
 
 ## Usage
 
