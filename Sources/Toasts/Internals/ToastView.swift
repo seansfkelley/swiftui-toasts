@@ -13,16 +13,9 @@ internal struct ToastView: View {
       main
         .frame(minHeight: 48)
         .fixedSize(horizontal: false, vertical: true)
-        .background {
-          ZStack {
-            WindowOverlayHitTestArea()
-            shape.fill(Color.white.opacity(isDark ? 0.08 : 0.12))
-          }
-        }
+        .background { WindowOverlayHitTestArea() }
         .glassEffect(.regular.interactive(), in: shape)
         .contentShape(shape)
-        .compositingGroup()
-        .shadow(color: .primary.opacity(isDark ? 0.0 : 0.08), radius: 14, y: 6.0)
     } else {
       main
         ._background {
